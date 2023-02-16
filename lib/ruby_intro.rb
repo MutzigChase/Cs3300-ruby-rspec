@@ -1,4 +1,4 @@
-# When done, submit this entire file to the autograder.
+# When done, submit this entire file to the autograder
 
 # Part 1
 
