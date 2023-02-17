@@ -41,6 +41,7 @@ end
 
 def starts_with_consonant? s
   #converts all letters to upper case and compares start with consonants
+  #copied a list of consonants that was in upper, so went with upcase
   s.upcase.start_with?('B', 'C', 'D', 'F', 'G', 'J', 'K', 'L', 'M', 'N', 'P', 'Q', 'S', 'T', 'V', 'X', 'Z' 'H', 'R', 'W', 'Y')
 end
 
