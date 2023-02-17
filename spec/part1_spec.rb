@@ -5,15 +5,22 @@ require_relative '../lib/ruby_intro'
 describe 'Ruby intro part 1' do
   describe '#sum' do
 
+    #This explains what the test is and how many points it is worth
     it 'returns correct sum [1 point]', points: 1 do
+      #Expects the sum of array elements to be an integer
       expect(sum([1, 2, 3, 4, 5])).to be_a_kind_of Integer
+      #Expects the sum of array elements to be 15
       expect(sum([1, 2, 3, 4, 5])).to eq(15)
+      #Expects the sum of array elements to be 5
       expect(sum([1, 2, 3, 4, -5])).to eq(5)
+      #Expects the sum of the array elements to be -90
       expect(sum([1, 2, 3, 4, -5, 5, -100])).to eq(-90)
     end
 
     it 'works on the empty array [2 points]', points: 2 do
+      #Expects sum command to accept nothing
       expect { sum([]) }.not_to raise_error
+      #Expects sum command to be zero when given nothing
       expect(sum([])).to be_zero
     end
   end
@@ -21,6 +28,7 @@ describe 'Ruby intro part 1' do
   describe '#max_2_sum' do
     
     it 'returns the correct sum [1 point]', points: 1 do
+      max_2_sum([1, 2, 3, 4, 5])
       expect(max_2_sum([1, 2, 3, 4, 5])).to be_a_kind_of Integer
       expect(max_2_sum([1, -2, -3, -4, -5])).to eq(-1)
     end
